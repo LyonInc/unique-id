@@ -17,11 +17,11 @@ export default class UniqueIdGenerator {
 
   next(index: number): string {
     let output = '';
-    let n = Math.abs(this.encrypt(index));
+    let n = Math.abs(this.encrypt(index)) | 0;
 
     while (n > 0) {
-      output += this.alphabet[1 + (n % this.base)];
-      n /= this.base;
+      output += this.alphabet[(n % this.base)];
+      n = (n / this.base) | 0;
     }
 
     return output;

@@ -20,3 +20,6 @@ The constructor for UniqueIdGenerator may receive two parameters:
 
 Once an instance is constructed, the `next` method can be used to generate a unique string. This method receives a number that is used by the `pseudo-encrypt` function.
 
+## Reference
+
+- Stack Overflow: https://stackoverflow.com/a/12590064

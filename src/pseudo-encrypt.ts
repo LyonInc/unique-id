@@ -34,7 +34,7 @@
  * @param value
  */
 export function secretSauce(r1: number): number {
-  return (((1366 * r1 + 150889) % 714025) / 714025.0);
+  return ((1366.0 * r1 + 150889) % 714025) / 714025.0;
 }
 
 export default function createPseudoEncrypt(sauce = secretSauce): (value: number) => number {
