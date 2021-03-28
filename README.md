@@ -1,4 +1,5 @@
 # unique-id
+
 Generates unique id
 
 ## How does it work
@@ -14,6 +15,7 @@ Users may define their own alphabet sequence, or their own sauce (a permutation 
 This package exports a default class named "UniqueIdGenerator". This class creates an instance for generating unique ids.
 
 The constructor for UniqueIdGenerator may receive two parameters:
+
 - `alphabet` - the base of character encryption. The default sequence is `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.
 - `sauce` - a permutation formula used for the `pseudo-encrypt` algorithm. The default is 
 `((1366 * r1 + 150889) % 714025) / 714025.0)` where `r1` is a 16-bit value.
