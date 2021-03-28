@@ -1,4 +1,3 @@
-
 /**
  * Based on http://wiki.postgresql.org/wiki/Pseudo_encrypt
  *
